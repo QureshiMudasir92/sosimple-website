@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registration</title>
+<style>
+.fom{
+width: 200px;
+background: linear-gradient(-3deg,violet,rgb(220, 65, 255),cyan,lightblue);
+outline: solid 3px blue;
+animation: back 2.5s 0.5s infinite;
+}
+@keyframes back{
+    0%{background: linear-gradient(45deg,red,yellow,orange,blue);}
+
+    50%{background: linear-gradient(-45deg,violet,rgb(220, 65, 255),cyan,lightblue);}
+    100%{background: linear-gradient(-45deg,red,rgb(172, 172, 255),green,yellow);}
+}
+#button{
+width: 60px;
+height: 20px;
+background: linear-gradient(180deg,rgb(255, 253, 253));
+filter: drop-shadow(2px 2px 3px white);
+color:rgb(25, 0, 255);
+&:hover{
+    color: rgb(255, 0, 0);
+    background: linear-gradient(180deg,rgb(0, 0, 0));
+}
+}
+.tum{
+    margin-top: 0.1rem;
+    margin-bottom: 0.1rem;
+}
+.div{
+    margin-left:3rem;
+    margin-top: 2.5rem;
+    height: 100%;
+    width: 100%;
+}
+</style>
+</head>
+<body>
+        <form action="https://qureshimudasir92.github.io/sosimple-website/family%20garment">
+            <div class="div">
+ <fieldset class="fom" >
+        <legend style="text-align: center;">Register Yourself For Free Cookies</legend>
+        <label> First Name <strong>:</strong></label>
+         <abbr title="You must write your First Name">
+          <Input type="text" name="first name" class="tum" autocomplete="on" placeholder="First name"></Input>
+         </abbr> 
+        <br>
+        <label>Last Name<strong>:</strong></label> 
+        <abbr title="You must write your Last Name">
+         <Input type="text" name="last name" class="tum" autocomplete="on" placeholder="Last name" ></Input>
+         </abbr>
+         <br>
+        <label>Email<strong>:</strong></label> 
+        <abbr title="You must write your Email for example .........@gmail.com">
+         <Input type="email" class="tum" name="autocomplete" placeholder=" Email" ></Input>
+        </abbr>
+        <br>
+        <label>Password<strong>:</strong></label>
+        <abbr title="Write Your Password">
+            <Input type="password" class="tum"name="autocomplete" placeholder="Password"></Input>
+        </abbr> 
+        <br>
+        <label>State<strong>:</strong></label>
+        <abbr title="Write your State Name for example Jammu&Kashmir">
+            <Input type="text" class="tum" name="autocomplete" placeholder="State" autocomplete="additional-name"></Input>
+        </abbr> 
+        <br>
+        <!-- Gender determination -->
+            <label>Gender <strong>:</strong></label>
+            <br>
+            <input type="radio" name="Male"value="Male">Male
+            <input type="radio" name="Female"value="Female">Female
+            <br>
+            <input type="radio" name="Other"value="Other">Other
+            <input type="radio" name="Rather Can't Say"value="Rather Cant Say">Rather Can't Say
+            <br>
+        <!-- studies done by the individual -->
+         <br>
+            <label >Studied <strong>:</strong></label>
+            <br>
+            <input type="checkbox" name="TEN"value="10">10<sup>th</sup>Pass
+            <input type="checkbox" name="TWElTH"value="12">12<sup>th</sup>Pass
+            <br>
+            <!-- submit the form to meet the criteria -->
+            <!-- <button type="reset">full reset</button> -->
+             <br>
+        <abbr title="to move forward click me">
+        <button type="submit" id="button">submit</button>
+        </abbr>
+        </fieldset>
+            </div>
+        </form>
+</body>
+</html>
